@@ -5,10 +5,10 @@ class loginpage
     constructor(page)
     {
         this.page = page 
-        this.clickLoginfield = page.locator('#login2')
-        this.userNamefield = page.locator('#loginusername')
-        this.passwordfield = page.locator('#loginpassword')
-        this.clickLoginButton = page.locator('//button[@onclick="logIn()"]')
+        this.clickloginField = page.locator('#login2')
+        this.usernameField = page.locator('#loginusername')
+        this.passwordField = page.locator('#loginpassword')
+        this.clickloginButton = page.locator('//button[@onclick="logIn()"]')
 
     }
 
@@ -19,25 +19,25 @@ class loginpage
 
     async clickLoginlink()
     {
-        await this.clickLoginfield.click()
+        await this.clickloginField.click()
         return this 
     }
     
     async userName(username)
     {
-        await this.userNamefield.fill(username)
+        await this.usernameField.fill(username)
         return this 
     }
 
     async password(password)
     {
-        await this.passwordfield.fill(password)
+        await this.passwordField.fill(password)
         return this 
     }
 
     async clickLogin()
     {
-        await this.clickLoginButton.click()
+        await this.clickloginButton.click()
         return new placeorderpage(this.page)
     }
 }

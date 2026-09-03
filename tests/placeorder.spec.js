@@ -11,7 +11,7 @@ test.beforeEach(async({page})=>
 
 //Test Case - 7
 
-test.only('Login with valid credentials- Add to cart - Click ok on pop up', async({page})=>
+test('Login with valid credentials- Add to cart - Click ok on pop up', async({page})=>
 {
    const orderobj = new loginpage(page)
    await orderobj.clickLoginlink()
@@ -75,7 +75,7 @@ test('Login - Add Monitor Product - Add to Cart - Add Details - Purchase', async
    const placeorder = await orderobj2.clickLogin()
 
    await placeorder.monitorsLink()
-   await placeorder.monitorsSelection()
+   await placeorder.Selection('Apple monitor 24')
 
     page.on('dialog',async dialog=>
     {

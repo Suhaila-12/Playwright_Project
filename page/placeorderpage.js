@@ -6,9 +6,9 @@ class placeorderpage
     {
         this.page = page 
         this.selectphoneLink = page.locator('//a[text() = "Phones"]')
-        this.selectphone = page.getByText('Iphone 6 32gb')
+        //this.selectphone = page.locator('Iphone 6 32gb')
         this.selectmonitorLink = page.locator('//a[text() = "Monitors"]')
-        this.selectmonitor = page.getByText('Apple monitor 24')
+        //this.selectmonitor = page.getByText('Apple monitor 24')
         this.addCart = page.locator('//a[@class="btn btn-success btn-lg"]')
         this.clickCartButton = page.locator('//a[@id="cartur"]')
         this.placeOrderButton = page.locator('//button[@class="btn btn-success"]')
@@ -29,9 +29,9 @@ class placeorderpage
 
     }
 
-    async Selection()
+    async Selection(product)
     {
-        await this.page.locator('//a[text()="${product}"]').click()
+        await this.page.locator(`//a[text()="${product}"]`).click()
         //await this.selectphone.click()
         return this 
     }

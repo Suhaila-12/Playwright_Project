@@ -16,7 +16,7 @@ test('Verify Login with valid credentials',async({page})=>
    await loginobj.userName(validdata.username)
    await loginobj.password(validdata.password)
    const placeorder = await loginobj.clickLogin() // page navigation
-    await expect(page.locator('#nameofuser')).toHaveText('Welcome suhaila')
+   await expect(page.locator('#nameofuser')).toHaveText('Welcome suhaila')
 
 })
 

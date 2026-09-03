@@ -25,7 +25,7 @@ test('Sign Up',async({page})=>
     page.on('dialog', async dialog=>
     {
         
-       await expect(dialog.message()).toBe('Sign up successful.')
+        await expect(dialog.message()).toBe('Sign up successful.')
         await dialog.accept()
     })
 

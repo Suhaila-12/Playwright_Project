@@ -4,10 +4,10 @@ class signuppage
     {
         this.page = page
         this.signupField = page.locator('#signin2')
-        this.userNameField = page.locator('#sign-username')
+        this.usernameField = page.locator('#sign-username')
         this.passwordField = page.locator('#sign-password')
-        this.clickSignupButton = page.locator('//button[@class="btn btn-primary"]').nth(1)
-        this.clickCloseButton = page.getByRole('button',{name:'Close'}).nth(1)
+        this.clicksignupButton = page.locator('//button[@class="btn btn-primary"]').nth(1)
+        this.clickcloseButton = page.getByRole('button',{name:'Close'}).nth(1)
     }
 
     async accessURL()
@@ -23,7 +23,7 @@ class signuppage
 
     async userName()
     {
-        await this.userNameField.fill('suhaila')
+        await this.usernameField.fill('suhaila')
         return this 
     }
 
@@ -35,13 +35,13 @@ class signuppage
 
     async clickSignup()
     {
-        await this.clickSignupButton.click()
+        await this.clicksignupButton.click()
         return this 
     }
 
     async clickClose()
     {
-        await this.clickCloseButton.click()
+        await this.clickcloseButton.click()
         return this
     }
 }
