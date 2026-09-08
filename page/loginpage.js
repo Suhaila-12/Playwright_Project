@@ -15,6 +15,7 @@ class loginpage
     async accessURL()
     {
         await this.page.goto('https://www.demoblaze.com/')
+        return this 
     }
 
     async clickLoginlink()
