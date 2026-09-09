@@ -29,7 +29,7 @@ test(`Verify login with Invalid username and valid password ${dataset[0].usernam
     const loginobj1 = new loginpage(page)
    await loginobj1.accessURL()
    await loginobj1.clickLoginlink()
-   await loginobj1.userName(dataset[0].username) //data because of loop
+   await loginobj1.userName(dataset[0].username)
    await loginobj1.password(dataset[0].password)
  
     page.on('dialog',async dialog =>
@@ -51,7 +51,7 @@ test(`Verify login with valid username and Invalid password ${dataset[1].usernam
    const loginobj2 = new loginpage(page)
    await loginobj2.accessURL()
    await loginobj2.clickLoginlink()
-   await loginobj2.userName(dataset[1].username) //data because of loop
+   await loginobj2.userName(dataset[1].username) 
    await loginobj2.password(dataset[1].password)
 
     
