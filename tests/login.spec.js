@@ -5,7 +5,6 @@ const loginpage = require('../page/loginpage')
 const placeorderpage = require('../page/placeorderpage')
 
 
-
 //Test Case - 3
 
 test('Verify Login with valid credentials',async({page})=>
@@ -19,7 +18,6 @@ test('Verify Login with valid credentials',async({page})=>
    await expect(page.locator('#nameofuser')).toHaveText('Welcome suhaila')
 
 })
-
 
 
 //Test Case - 4

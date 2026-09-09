@@ -21,15 +21,15 @@ class signuppage
         return this
     }
 
-    async userName()
+    async userName(username)
     {
-        await this.usernameField.fill('suhaila')
+        await this.usernameField.fill(username)
         return this 
     }
 
-    async password()
+    async password(password)
     {
-        await this.passwordField.fill('User@123')
+        await this.passwordField.fill(password)
         return this 
     }
 
