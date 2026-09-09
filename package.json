@@ -1,16 +1,7 @@
 {
-  "name": "playwright_project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "type": "commonjs",
   "devDependencies": {
-    "@playwright/test": "^1.62.1",
-    "@types/node": "^26.2.0"
-  },
-  "dependencies": {
-    "@faker-js/faker": "^10.6.0"
+    "@faker-js/faker": "^10.6.0",
+    "allure": "^3.16.1",
+    "allure-playwright": "^3.12.0"
   }
 }
